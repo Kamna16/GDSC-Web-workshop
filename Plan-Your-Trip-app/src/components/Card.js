@@ -2,6 +2,7 @@ import { useState } from "react";
 
 
 function Card({id, image,info,price,name, removeTour})  {
+    // state to manage hidden text
     const[readmore,setReadmore] = useState(false);
     
     const description = readmore ? info :`${info.substring(0,200)}....`;
